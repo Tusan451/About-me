@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -13,33 +13,47 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sEC-N9-s0O">
-                                <rect key="frame" x="132" y="352.5" width="150" height="191"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Без названия" translatesAutoresizingMaskIntoConstraints="NO" id="sgI-Z4-Ush">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="PeZ-YC-1CR"/>
-                                            <constraint firstAttribute="height" constant="150" id="TId-3O-Avm"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fedotov Oleg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1w-kB-oJT">
-                                        <rect key="frame" x="0.0" y="162" width="150" height="29"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="X - 1" translatesAutoresizingMaskIntoConstraints="NO" id="srS-J4-1EN">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fedotov Oleg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1w-kB-oJT">
+                                <rect key="frame" x="25" y="94" width="340" height="49"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✺" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdT-Y4-e91">
+                                <rect key="frame" x="25" y="380" width="340" height="84"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="72"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1h7-wG-0nN">
+                                <rect key="frame" x="25" y="742" width="340" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sEC-N9-s0O" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="SRs-S0-vao"/>
-                            <constraint firstItem="sEC-N9-s0O" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="T7F-pc-JBZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1h7-wG-0nN" secondAttribute="trailing" constant="25" id="4Wc-8j-0Ul"/>
+                            <constraint firstItem="1h7-wG-0nN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Jbo-Zo-kvz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1h7-wG-0nN" secondAttribute="bottom" constant="40" id="Jdq-ns-C3e"/>
+                            <constraint firstItem="srS-J4-1EN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PFR-gN-HmJ"/>
+                            <constraint firstItem="XdT-Y4-e91" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="beV-X1-GxG"/>
+                            <constraint firstItem="XdT-Y4-e91" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ePs-hR-Gzf"/>
+                            <constraint firstItem="L1w-kB-oJT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="gnL-YU-js5"/>
+                            <constraint firstItem="L1w-kB-oJT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="hM9-rl-0BK"/>
+                            <constraint firstItem="srS-J4-1EN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lFQ-gU-lwh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XdT-Y4-e91" secondAttribute="trailing" constant="25" id="neT-3g-Trl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="srS-J4-1EN" secondAttribute="bottom" id="soM-eu-O34"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="srS-J4-1EN" secondAttribute="trailing" id="ydP-ad-a09"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L1w-kB-oJT" secondAttribute="trailing" constant="25" id="yv0-aJ-5RM"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -49,6 +63,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Без названия" width="244" height="207"/>
+        <image name="X - 1" width="750" height="1624"/>
     </resources>
 </document>

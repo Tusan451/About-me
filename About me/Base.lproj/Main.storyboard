@@ -95,6 +95,9 @@
                             <constraint firstItem="nn3-oC-ibX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iQC-dj-eUQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="startButton" destination="j3S-5i-xEF" id="hl4-7n-uSV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -418,6 +421,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="X - 1" translatesAutoresizingMaskIntoConstraints="NO" id="hTE-fm-Hs9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tilda" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wA-Ov-hpy">
+                                <rect key="frame" x="25" y="207" width="325" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacts ✍️" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pb7-oH-usK">
                                 <rect key="frame" x="25" y="40" width="325" height="67"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="56"/>
@@ -442,10 +451,10 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tilda" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wA-Ov-hpy">
-                                <rect key="frame" x="25" y="207" width="325" height="28"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✺" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiC-BQ-Xg2">
+                                <rect key="frame" x="25" y="494" width="325" height="84"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="72"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -456,8 +465,10 @@
                             <constraint firstItem="hTE-fm-Hs9" firstAttribute="top" secondItem="biE-0O-9dx" secondAttribute="top" id="2JI-oa-1FE"/>
                             <constraint firstItem="hby-24-6LJ" firstAttribute="top" secondItem="1wA-Ov-hpy" secondAttribute="bottom" constant="24" id="C9t-99-hJO"/>
                             <constraint firstItem="0QX-Y8-KgM" firstAttribute="top" secondItem="pdE-OF-e1s" secondAttribute="bottom" constant="24" id="Gu5-tO-u13"/>
+                            <constraint firstItem="hiC-BQ-Xg2" firstAttribute="leading" secondItem="biE-0O-9dx" secondAttribute="leading" constant="25" id="NKv-al-ghZ"/>
                             <constraint firstItem="biE-0O-9dx" firstAttribute="trailing" secondItem="hTE-fm-Hs9" secondAttribute="trailing" id="OiX-2K-8WM"/>
                             <constraint firstItem="Pb7-oH-usK" firstAttribute="top" secondItem="biE-0O-9dx" secondAttribute="top" constant="40" id="S3d-9O-9Ta"/>
+                            <constraint firstItem="biE-0O-9dx" firstAttribute="trailing" secondItem="hiC-BQ-Xg2" secondAttribute="trailing" constant="25" id="So8-OS-xLA"/>
                             <constraint firstItem="pdE-OF-e1s" firstAttribute="top" secondItem="hby-24-6LJ" secondAttribute="bottom" constant="24" id="U3J-Tv-FpL"/>
                             <constraint firstItem="hTE-fm-Hs9" firstAttribute="leading" secondItem="biE-0O-9dx" secondAttribute="leading" id="XIj-42-oul"/>
                             <constraint firstItem="pdE-OF-e1s" firstAttribute="leading" secondItem="biE-0O-9dx" secondAttribute="leading" constant="25" id="ZlC-cB-47G"/>
@@ -466,6 +477,7 @@
                             <constraint firstItem="biE-0O-9dx" firstAttribute="trailing" secondItem="hby-24-6LJ" secondAttribute="trailing" constant="25" id="jmz-qE-naT"/>
                             <constraint firstItem="biE-0O-9dx" firstAttribute="trailing" secondItem="0QX-Y8-KgM" secondAttribute="trailing" constant="25" id="joL-cY-agD"/>
                             <constraint firstItem="0QX-Y8-KgM" firstAttribute="leading" secondItem="biE-0O-9dx" secondAttribute="leading" constant="25" id="pZI-VC-Ude"/>
+                            <constraint firstItem="biE-0O-9dx" firstAttribute="bottom" secondItem="hiC-BQ-Xg2" secondAttribute="bottom" constant="40" id="sZo-1a-ZGV"/>
                             <constraint firstItem="biE-0O-9dx" firstAttribute="trailing" secondItem="Pb7-oH-usK" secondAttribute="trailing" constant="25" id="ssb-Rf-QCg"/>
                             <constraint firstItem="1wA-Ov-hpy" firstAttribute="leading" secondItem="biE-0O-9dx" secondAttribute="leading" constant="25" id="w43-1o-z10"/>
                             <constraint firstItem="1wA-Ov-hpy" firstAttribute="top" secondItem="Pb7-oH-usK" secondAttribute="bottom" constant="100" id="x72-cS-T9j"/>
