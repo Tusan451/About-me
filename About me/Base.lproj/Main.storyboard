@@ -494,7 +494,7 @@
         <!--Projects-->
         <scene sceneID="mJV-aJ-3lb">
             <objects>
-                <viewController id="FnH-sT-HLj" sceneMemberID="viewController">
+                <viewController id="FnH-sT-HLj" customClass="ProjectsViewController" customModule="About_me" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TwB-cF-6ef">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -511,19 +511,19 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WWf-hc-7rb">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="120"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02e8067f0405accc4f2d6f44e1757df1" translatesAutoresizingMaskIntoConstraints="NO" id="xoR-m2-xig">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02e8067f0405accc4f2d6f44e1757df1" translatesAutoresizingMaskIntoConstraints="NO" id="xoR-m2-xig">
                                                 <rect key="frame" x="0.0" y="0.0" width="103" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xoR-m2-xig" secondAttribute="height" multiplier="103:120" id="VYJ-hV-SNI"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="etre" translatesAutoresizingMaskIntoConstraints="NO" id="d9N-XX-BDP">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="etre" translatesAutoresizingMaskIntoConstraints="NO" id="d9N-XX-BDP">
                                                 <rect key="frame" x="111" y="0.0" width="103" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="d9N-XX-BDP" secondAttribute="height" multiplier="103:120" id="apx-Zk-SqR"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finish" translatesAutoresizingMaskIntoConstraints="NO" id="vqk-QH-rIY">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finish" translatesAutoresizingMaskIntoConstraints="NO" id="vqk-QH-rIY">
                                                 <rect key="frame" x="222" y="0.0" width="103" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="vqk-QH-rIY" secondAttribute="height" multiplier="103:120" id="Okh-Us-7NZ"/>
@@ -534,19 +534,19 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CUt-0Y-OxO">
                                         <rect key="frame" x="0.0" y="128" width="325" height="120"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame3" translatesAutoresizingMaskIntoConstraints="NO" id="jeQ-I2-9s2">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame3" translatesAutoresizingMaskIntoConstraints="NO" id="jeQ-I2-9s2">
                                                 <rect key="frame" x="0.0" y="0.0" width="103" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jeQ-I2-9s2" secondAttribute="height" multiplier="103:120" id="XGh-bn-g1p"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_processing20201119-16057-33w9vt" translatesAutoresizingMaskIntoConstraints="NO" id="rjU-3i-lVm">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_processing20201119-16057-33w9vt" translatesAutoresizingMaskIntoConstraints="NO" id="rjU-3i-lVm">
                                                 <rect key="frame" x="111" y="0.0" width="103" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="rjU-3i-lVm" secondAttribute="height" multiplier="103:120" id="MVZ-c4-Y1L"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview" translatesAutoresizingMaskIntoConstraints="NO" id="cP6-sI-Qw7">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview" translatesAutoresizingMaskIntoConstraints="NO" id="cP6-sI-Qw7">
                                                 <rect key="frame" x="222" y="0.0" width="103" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="cP6-sI-Qw7" secondAttribute="height" multiplier="103:120" id="fO3-DN-Xha"/>
@@ -557,19 +557,19 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aec-E3-VOo">
                                         <rect key="frame" x="0.0" y="256" width="325" height="120"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview (1)" translatesAutoresizingMaskIntoConstraints="NO" id="UNx-Qc-BoV">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview (1)" translatesAutoresizingMaskIntoConstraints="NO" id="UNx-Qc-BoV">
                                                 <rect key="frame" x="0.0" y="0.0" width="103" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="UNx-Qc-BoV" secondAttribute="height" multiplier="103:120" id="lJL-qj-sAb"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview (2)" translatesAutoresizingMaskIntoConstraints="NO" id="BAd-j2-J6b">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview (2)" translatesAutoresizingMaskIntoConstraints="NO" id="BAd-j2-J6b">
                                                 <rect key="frame" x="111" y="0.0" width="103" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="BAd-j2-J6b" secondAttribute="height" multiplier="103:120" id="7sD-8d-RWN"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Gj-pp-ec8">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="8" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Gj-pp-ec8">
                                                 <rect key="frame" x="222" y="0.0" width="103" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="3Gj-pp-ec8" secondAttribute="height" multiplier="103:120" id="1vx-pe-qdL"/>
@@ -600,6 +600,18 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Projects" image="icons8-открыть-папку-30()" id="7ub-Wd-5hA"/>
+                    <connections>
+                        <outlet property="projectLabel" destination="sGq-1u-jgu" id="hYI-5e-vvk"/>
+                        <outletCollection property="projectImageViews" destination="xoR-m2-xig" collectionClass="NSMutableArray" id="TEO-TD-h8U"/>
+                        <outletCollection property="projectImageViews" destination="d9N-XX-BDP" collectionClass="NSMutableArray" id="5L6-js-fEg"/>
+                        <outletCollection property="projectImageViews" destination="vqk-QH-rIY" collectionClass="NSMutableArray" id="MFt-cH-vLi"/>
+                        <outletCollection property="projectImageViews" destination="cP6-sI-Qw7" collectionClass="NSMutableArray" id="LR1-lk-goQ"/>
+                        <outletCollection property="projectImageViews" destination="rjU-3i-lVm" collectionClass="NSMutableArray" id="Uij-kq-AGy"/>
+                        <outletCollection property="projectImageViews" destination="jeQ-I2-9s2" collectionClass="NSMutableArray" id="dtb-oQ-dY1"/>
+                        <outletCollection property="projectImageViews" destination="UNx-Qc-BoV" collectionClass="NSMutableArray" id="VEz-g2-vPE"/>
+                        <outletCollection property="projectImageViews" destination="BAd-j2-J6b" collectionClass="NSMutableArray" id="XLB-jg-ovD"/>
+                        <outletCollection property="projectImageViews" destination="3Gj-pp-ec8" collectionClass="NSMutableArray" id="T1b-Vy-i1y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJV-Jm-U1z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
